@@ -10,7 +10,7 @@ const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'N
         const sortedBands = bands.sort((a, b) => stripArticles(a) > stripArticles(b) ? 1 : -1);
 
         // Create the sorted list and add it to the webpage
-        const bandList = document.getElementById('band-list');
+        const bandList = document.getElementById('band');
         sortedBands.forEach(band => {
             const listItem = document.createElement('li');
             listItem.textContent = band;
